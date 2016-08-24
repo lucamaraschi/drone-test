@@ -4,5 +4,5 @@ build:
     - npm install
     - npm test
 compose:
-  mongodb:
-    image: mongodb:3.2
+  mongo:
+    image: mongo:3.2
