@@ -1,0 +1,5 @@
+build:
+  image: node:argon
+  commands:
+    - npm install
+    - npm test
