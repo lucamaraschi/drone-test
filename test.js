@@ -5,7 +5,7 @@ const clean = require('mongo-clean')
 
 const url = 'mongodb://localhost:27017/test'
 
-console.log(process.ENV)
+console.log(process.env)
 
 t.plan(3)
 
