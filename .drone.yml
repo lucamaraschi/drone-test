@@ -3,3 +3,6 @@ build:
   commands:
     - npm install
     - npm test
+compose:
+  mongodb:
+    image: mongodb:3.2
