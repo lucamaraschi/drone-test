@@ -3,6 +3,13 @@ build:
   commands:
     - npm install
     - npm test
+publish:
+  ecr:
+    access_key: $$DRONE_CI_ACCESS_KEY
+    secret_key: $$DRONE_CI_SECRET_KEY
+    region: us-west-2
+    repo: lab-test
+    tag: latest
 compose:
   mongo:
     image: mongo:3.2
