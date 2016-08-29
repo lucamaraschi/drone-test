@@ -10,7 +10,7 @@ publish:
     region: us-west-2
     repo: lab-test
     tag: latest
-    storage_driver: vfs
+    storage_driver: overlay
 compose:
   mongo:
     image: mongo:3.2
