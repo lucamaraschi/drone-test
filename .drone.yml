@@ -8,9 +8,7 @@ publish:
     secret_key: $$DRONE_CI_SECRET_KEY
     region: us-west-2
     repo: lab-test
-    tag:
-      - dummyservice
-      - latest
+    tag: latest
     storage_driver: vfs
     load: docker/layers.tar
     save:
@@ -21,11 +19,8 @@ publish:
     secret_key: $$DRONE_CI_SECRET_KEY
     region: eu-west-2
     image_name: lab-test
-    image_tag: dummyservice
+    image_tag: latest
     service: test-svc
     port_mappings:
       - 3000 9000
     memory: 128
-compose:
-  mongo:
-    image: mongo:3.2
