@@ -21,3 +21,4 @@ publish:
     port_mappings:
       - 3000 9000
     memory: 128
+    cluster: lab-test
