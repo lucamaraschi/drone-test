@@ -10,3 +10,15 @@ publish:
     repo: lab-test
     tag: latest
     storage_driver: aufs
+  ecs:
+    access_key: $$DRONE_CI_ACCESS_KEY
+    secret_key: $$DRONE_CI_SECRET_KEY
+    region: us-west-2
+    family: lab-test-app-task
+    image_name: lab-test
+    image_tag: latest
+    service: lab-app
+    port_mappings:
+      - 9000 9000
+    memory: 256
+    cluster: lab-cluster
