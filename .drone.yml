@@ -21,4 +21,4 @@ publish:
     port_mappings:
       - 9000 9000
     memory: 256
-    cluster: lab-cluster
+    cluster: laboratorium
