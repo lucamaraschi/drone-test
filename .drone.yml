@@ -14,10 +14,10 @@ publish:
     access_key: $$DRONE_CI_ACCESS_KEY
     secret_key: $$DRONE_CI_SECRET_KEY
     region: us-west-2
-    family: lab-sample-app
+    family: deploy-simple-svc
     image_name: 711655675495.dkr.ecr.us-west-2.amazonaws.com/lab-test
     image_tag: "$$BUILD_NUMBER"
-    service: lab-sample-svc
+    service: a-simple-svc
     memory: 256
     port_mappings:
       - 9000 9000
