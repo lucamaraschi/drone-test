@@ -21,4 +21,4 @@ publish:
     memory: 256
     port_mappings:
       - 9000 9000
-    cluster: laboratorium
+    cluster: ikea
