@@ -8,7 +8,7 @@ publish:
     secret_key: $$DRONE_CI_SECRET_KEY
     region: us-west-2
     repo: lab-test
-    tag: $$CI_BUILD_NUMBER
+    tag: $$BUILD_NUMBER
     storage_driver: aufs
   ecs:
     access_key: $$DRONE_CI_ACCESS_KEY
@@ -16,7 +16,7 @@ publish:
     region: us-west-2
     family: lab-sample-app
     image_name: 711655675495.dkr.ecr.us-west-2.amazonaws.com/lab-test
-    image_tag: $$CI_BUILD_NUMBER
+    image_tag: $$BUILD_NUMBER
     service: lab-sample-svc
     memory: 256
     port_mappings:
