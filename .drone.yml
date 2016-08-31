@@ -19,4 +19,6 @@ publish:
     image_tag: latest
     service: lab-sample-svc
     memory: 256
+    port_mappings:
+      - 9000 9000
     cluster: laboratorium
