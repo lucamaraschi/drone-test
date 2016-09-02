@@ -1,6 +1,6 @@
 docker
 LICENSE
 README
-secrets.yml.old
+secrets.yml
 drone.sec
 .drone.yml
