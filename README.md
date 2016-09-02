@@ -1,7 +1,7 @@
 # drone-test
 
 [![Build
-Status](http://52.43.64.17/api/badges/mcollina/drone-test/status.svg)](http://52.43.64.17/mcollina/drone-test)
+Status](http://52.43.127.218/api/badges/mcollina/drone-test/status.svg)](http://52.43.64.17/mcollina/drone-test)
 
 This is a test project meant to test the complete CI flow from pushing code to a repository to deploying it to ECS via Docker image generation in ECR.
 
@@ -15,7 +15,7 @@ Hereby the file contained in this project are described:
 In order to generate a `.drone.sec` file, the following command needs to be executed:
 
 ```sh
-DRONE_SERVER=http://52.43.64.17 DRONE_TOKEN='your token' drone secure --repo mcollina/drone-test --in secrets.yml
+DRONE_SERVER=http://52.43.127.218 DRONE_TOKEN='your user token in drone.io' drone secure --repo mcollina/drone-test --in secrets.yml
 ```
 
 The secret.yml file should be as following:
